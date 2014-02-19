@@ -1,4 +1,3 @@
-# vim: set shiftwidth=2 tabstop=2 softtabstop=2 expandtab:
 
 Inventory = require 'inventory'
 InventoryWindow = require 'inventory-window'
@@ -6,12 +5,12 @@ ItemPile = require 'itempile'
 ModalDialog = require 'voxel-modal-dialog'
 
 module.exports = (game, opts) ->
-  new InventoryDialog(game, opts)
+  new InventoryCrafting(game, opts)
 
 module.exports.pluginInfo =
   'loadAfter': ['voxel-recipes', 'voxel-carry', 'voxel-registry']
 
-class InventoryDialog extends ModalDialog
+class InventoryCrafting extends ModalDialog
   constructor: (@game, opts) ->
     return if not @game.isClient # TODO: server
 
