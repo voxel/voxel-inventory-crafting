@@ -2,7 +2,7 @@
 Inventory = require 'inventory'
 InventoryWindow = require 'inventory-window'
 ItemPile = require 'itempile'
-InventoryDialog = require 'voxel-inventory-dialog'
+InventoryDialog = (require 'voxel-inventory-dialog').InventoryDialog
 
 module.exports = (game, opts) ->
   new InventoryCrafting(game, opts)

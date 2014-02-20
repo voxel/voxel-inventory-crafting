@@ -10,7 +10,7 @@
 
   ItemPile = require('itempile');
 
-  InventoryDialog = require('voxel-inventory-dialog');
+  InventoryDialog = (require('voxel-inventory-dialog')).InventoryDialog;
 
   module.exports = function(game, opts) {
     return new InventoryCrafting(game, opts);
