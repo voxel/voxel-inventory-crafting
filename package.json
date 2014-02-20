@@ -13,7 +13,7 @@
     "crafting"
   ],
   "dependencies": {
-    "voxel-inventory-dialog": "git://github.com/deathcap/voxel-inventory-dialog.git#b6014d8495db323b198d90c1ed05d69e64f7af61",
+    "voxel-inventory-dialog": "~0.3.0",
     "inventory": "~0.1.0",
     "itempile": "~0.1.1",
     "inventory-window": "~0.2.0",
