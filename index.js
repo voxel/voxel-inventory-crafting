@@ -72,9 +72,11 @@
       resultCont.style.display = 'flex';
       resultCont.style.flexFlow = 'column';
       resultCont.style.justifyContent = 'center';
+      resultCont.style.marginLeft = '30px';
       outer = document.createElement('div');
       outer.style.display = 'flex';
       outer.style.float = 'right';
+      outer.style.margin = '30px';
       outer.appendChild(craftContOuter);
       outer.appendChild(resultCont);
       InventoryCrafting.__super__.constructor.call(this, game, {
