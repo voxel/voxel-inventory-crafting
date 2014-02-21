@@ -24,7 +24,7 @@
     __extends(InventoryCrafting, _super);
 
     function InventoryCrafting(game, opts) {
-      var craftCont, resultCont, _ref, _ref1;
+      var craftCont, craftContOuter, outer, resultCont, _ref, _ref1;
       this.game = game;
       this.recipes = (function() {
         var _ref1;
@@ -66,11 +66,19 @@
         };
       })(this));
       craftCont = this.craftIW.createContainer();
+      craftContOuter = document.createElement('div');
+      craftContOuter.appendChild(craftCont);
       resultCont = this.resultIW.createContainer();
-      resultCont.style.marginLeft = '30px';
-      resultCont.style.marginTop = '15%';
+      resultCont.style.display = 'flex';
+      resultCont.style.flexFlow = 'column';
+      resultCont.style.justifyContent = 'center';
+      outer = document.createElement('div');
+      outer.style.display = 'flex';
+      outer.style.float = 'right';
+      outer.appendChild(craftContOuter);
+      outer.appendChild(resultCont);
       InventoryCrafting.__super__.constructor.call(this, game, {
-        upper: [craftCont, resultCont]
+        upper: [outer]
       });
     }
 

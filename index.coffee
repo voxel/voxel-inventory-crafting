@@ -26,12 +26,23 @@ class InventoryCrafting extends InventoryDialog
     # crafting + result div, add to upper from InventoryDialog
     craftCont = @craftIW.createContainer()
 
+    craftContOuter = document.createElement 'div'  # so craftCont can float left
+    craftContOuter.appendChild craftCont
+
     resultCont = @resultIW.createContainer()
-    resultCont.style.marginLeft = '30px'
-    resultCont.style.marginTop = '15%'
+    resultCont.style.display = 'flex'
+    resultCont.style.flexFlow = 'column'
+    resultCont.style.justifyContent = 'center'
+
+    outer = document.createElement 'div'
+    outer.style.display = 'flex'
+    outer.style.float = 'right'
+
+    outer.appendChild craftContOuter
+    outer.appendChild resultCont
 
     super game,
-      upper: [craftCont, resultCont]
+      upper: [outer]
 
   enable: () ->
 
