@@ -2,7 +2,7 @@
 
 A player inventory and crafting dialog for voxel.js:
 
-![screenshot](http://i.imgur.com/WesAOTc.png "Screenshot")
+![screenshot](http://i.imgur.com/dpdJbYE.png "Screenshot")
 
 The lower grid is the player's inventory, from
 [voxel-inventory-dialog](https://github.com/deathcap/voxel-inventory-dialog)
