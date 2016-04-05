@@ -1,7 +1,7 @@
 {
   "name": "voxel-inventory-crafting",
   "description": "player crafting inventory dialog (voxel.js plugin)",
-  "version": "0.3.2",
+  "version": "1.0.0",
   "main": "inventory-crafting.js",
   "repository": {
     "type": "git",
