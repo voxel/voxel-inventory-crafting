@@ -2,7 +2,7 @@
   "name": "voxel-inventory-crafting",
   "description": "player crafting inventory dialog (voxel.js plugin)",
   "version": "0.3.2",
-  "main": "inventory-crafting.coffee",
+  "main": "inventory-crafting.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:deathcap/voxel-inventory-crafting.git"
